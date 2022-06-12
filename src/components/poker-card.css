@@ -31,9 +31,10 @@
 }
 
 [alt="![](#poker-card)"] ~ i:first-of-type > img {
-    width: calc(var(--size) * 125) !important;
-    height: calc(var(--size) * 175) !important;
-    border-radius: 1rem !important;
+    min-width: calc(var(--size) * 125) !important;
+    min-height: calc(var(--size) * 175) !important;
+    max-width: calc(var(--size) * 125) !important;
+    max-height: calc(var(--size) * 175) !important;
 }
 
 [alt="![](#poker-card)"] ~ i:first-of-type::before,
@@ -65,8 +66,10 @@
     margin: calc(var(--size) * -0.5rem) !important;
 
     padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem)) !important;
-    width: 0 !important;
-    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
 
     background:
         repeating-linear-gradient(-.15turn, transparent, red 10px),
