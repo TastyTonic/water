@@ -7,6 +7,7 @@ a[onclick*="/suicide"] {
 }
 
 body > div.container {
+    width: 100vw !important;
     padding: 0 !important;
     display: flex !important;
     flex-direction: column !important;
