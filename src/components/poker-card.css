@@ -1,24 +1,24 @@
-[alt="![](#.suit-club)"] ~ i:first-of-type {
+[alt="![](#.suit-club)"] ~ img[alt*=>"![](#"] + i:first-of-type {
     --suit: '♣';
     --color: black;
 }
 
-[alt="![](#.suit-diamond)"] ~ i:first-of-type {
+[alt="![](#.suit-diamond)"] ~ img[alt*=>"![](#"] + i:first-of-type {
     --suit: '♦';
     --color: red;
 }
 
-[alt="![](#.suit-heart)"] ~ i:first-of-type {
+[alt="![](#.suit-heart)"] ~ img[alt*=>"![](#"] + i:first-of-type {
     --suit: '♥';
     --color: red;
 }
 
-[alt="![](#.suit-spade)"] ~ i:first-of-type {
+[alt="![](#.suit-spade)"] ~ img[alt*=>"![](#"] + i:first-of-type {
     --suit: '♠';
     --color: black;
 }
 
-[alt="![](#poker-card)"] ~ i:first-of-type {
+[alt="![](#poker-card)"] + i {
     --size: 1;
 
     position: relative !important;
@@ -30,7 +30,7 @@
     border: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
-[alt="![](#poker-card)"] ~ i:first-of-type > img {
+[alt="![](#poker-card)"] + i > img {
     min-width: calc(var(--size) * 125px) !important;
     min-height: calc(var(--size) * 175px) !important;
     max-width: calc(var(--size) * 125px) !important;
@@ -38,8 +38,8 @@
     margin: 0 !important;
 }
 
-[alt="![](#poker-card)"] ~ i:first-of-type::before,
-[alt="![](#poker-card)"] ~ i:first-of-type::after {
+[alt="![](#poker-card)"] + i::before,
+[alt="![](#poker-card)"] + i::after {
     padding: calc(var(--size) * 0.2rem) !important;
     font-size: calc(var(--size) * 2rem) !important;
     content: var(--suit) !important;
@@ -52,18 +52,18 @@
     vertical-align: middle !important;
 }
 
-[alt="![](#poker-card)"] ~ i:first-of-type::before {
+[alt="![](#poker-card)"] + i::before {
     left: calc(var(--size) * .5rem) !important;
     top: calc(var(--size) * .5rem) !important;
 }
 
-[alt="![](#poker-card)"] ~ i:first-of-type::after {
+[alt="![](#poker-card)"] + i::after {
     right: calc(var(--size) * .5rem) !important;
     bottom: calc(var(--size) * .5rem) !important;
     transform: scale(1, -1) !important;
 }
 
-[alt="![](#.hidden-card)"] ~ i:first-of-type:not(:hover) > img {
+[alt="![](#.hidden-card)"] ~ img[alt*=>"![](#"] + i:not(:hover) > img {
     margin: calc(var(--size) * -0.5rem) !important;
 
     padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem)) !important;
@@ -79,7 +79,7 @@
     !important;
 }
 
-[alt="![](#.hidden-card)"] ~ i:first-of-type:not(:hover)::before,
-[alt="![](#.hidden-card)"] ~ i:first-of-type:not(:hover)::after {
+[alt="![](#.hidden-card)"] ~ img[alt*=>"![](#"] + i:not(:hover)::before,
+[alt="![](#.hidden-card)"] ~ img[alt*=>"![](#"] + i:not(:hover)::after {
     display: none !important;
 }
