@@ -35,6 +35,7 @@
     min-height: calc(var(--size) * 175px) !important;
     max-width: calc(var(--size) * 125px) !important;
     max-height: calc(var(--size) * 175px) !important;
+    margin: 0 !important;
 }
 
 [alt="![](#poker-card)"] ~ i:first-of-type::before,
