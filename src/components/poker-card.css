@@ -1,0 +1,79 @@
+[alt="![](#.suit-club)"] ~ a:first-of-type {
+    --suit: '♣';
+    --color: black;
+}
+
+[alt="![](#.suit-diamond)"] ~ a:first-of-type {
+    --suit: '♦';
+    --color: red;
+}
+
+[alt="![](#.suit-heart)"] ~ a:first-of-type {
+    --suit: '♥';
+    --color: red;
+}
+
+[alt="![](#.suit-spade)"] ~ a:first-of-type {
+    --suit: '♠';
+    --color: black;
+}
+
+[alt="![](#poker-card)"] ~ a:first-of-type {
+    --size: 1;
+
+    position: relative;
+    display: inline-block;
+    padding: calc(var(--size) * 1rem);
+    border-radius: 1rem;
+
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+[alt="![](#poker-card)"] ~ a:first-of-type > img {
+    width: calc(var(--size) * 125);
+    height: calc(var(--size) * 175);
+    border-radius: 1rem;
+}
+
+[alt="![](#poker-card)"] ~ a:first-of-type::before,
+[alt="![](#poker-card)"] ~ a:first-of-type::after {
+    padding: calc(var(--size) * 0.2rem);
+    font-size: calc(var(--size) * 2rem);
+    content: var(--suit);
+    color: var(--color);
+
+    display: inline;
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+[alt="![](#poker-card)"] ~ a:first-of-type::before {
+    left: calc(var(--size) * .5rem);
+    top: calc(var(--size) * .5rem);
+}
+
+[alt="![](#poker-card)"] ~ a:first-of-type::after {
+    right: calc(var(--size) * .5rem);
+    bottom: calc(var(--size) * .5rem);
+    transform: scale(1, -1);
+}
+
+[alt="![](#.hidden-card)"] ~ a:first-of-type:not(:hover) > img {
+    margin: calc(var(--size) * -0.5rem);
+
+    padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem));
+    width: 0;
+    height: 0;
+
+    background:
+        repeating-linear-gradient(-.15turn, transparent, red 10px),
+        repeating-linear-gradient(.15turn, pink, transparent 10px);
+}
+
+[alt="![](#.hidden-card)"] ~ a:first-of-type:not(:hover)::before,
+[alt="![](#.hidden-card)"] ~ a:first-of-type:not(:hover)::after {
+    display: none;
+}

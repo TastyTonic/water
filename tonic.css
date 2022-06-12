@@ -1,0 +1,5 @@
+/* remove pointless/stupid things */
+a[onclick*="/suicide"] {
+    display: none !important;
+}
+

@@ -1,0 +1,10 @@
+/*
+    Example:
+
+        <img src="#b"> will be converted into <img alt="![](#b)" src="..."
+
+        <img src"#b"><i>Test</i> will make Test bold
+*/
+
+[alt="![](#b)"] ~ i:first-of-type { font-weight: bold !important; }
+[alt="![](#i)"] ~ i:first-of-type { font-style: italic !important; }

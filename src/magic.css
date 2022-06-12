@@ -1,2 +1,14 @@
-/* just testing */
-* { background-color: lime !important; }
+/* meta */
+
+i {
+    font-style: normal;   
+}
+
+img[alt*="![](#"] {
+    display: none;
+}
+
+/* magic */
+
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/water@main/src/simple.css');
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/water@main/src/components.css');
