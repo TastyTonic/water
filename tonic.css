@@ -2,7 +2,7 @@
     display: none !important;
 }
 
-#main-content-col > :nth-child(n + 2), .jumbotron-overlay, #profile--info {
+#userpage #main-content-col > :nth-child(n + 2), #userpage .jumbotron-overlay, #profile--info {
     display: none !important;
 }
 
