@@ -31,10 +31,10 @@
 }
 
 [alt="![](#poker-card)"] ~ i:first-of-type > img {
-    min-width: calc(var(--size) * 125) !important;
-    min-height: calc(var(--size) * 175) !important;
-    max-width: calc(var(--size) * 125) !important;
-    max-height: calc(var(--size) * 175) !important;
+    min-width: calc(var(--size) * 125px) !important;
+    min-height: calc(var(--size) * 175px) !important;
+    max-width: calc(var(--size) * 125px) !important;
+    max-height: calc(var(--size) * 175px) !important;
 }
 
 [alt="![](#poker-card)"] ~ i:first-of-type::before,
