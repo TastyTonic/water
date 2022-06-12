@@ -1,40 +1,37 @@
 /* basic */
 
-[alt="![](#button)"] ~ a:first-of-type {
+[alt="![](#button)"] ~ i:first-of-type {
     padding: .4rem .75rem;
     border-radius: .25rem;
 }
 
-[alt="![](#button)"] ~ a:first-of-type:hover {
+[alt="![](#button)"] ~ i:first-of-type:hover {
     filter: brightness(90%);
 }
 
 /* colors */
 
-[alt="![](#.btn-primary)"] ~ a:first-of-type {
+[alt="![](#.btn-primary)"] ~ i:first-of-type {
     background-color: var(--primary);
     color: white;
 }
 
-[alt="![](#.btn-success)"] ~ a:first-of-type {
+[alt="![](#.btn-success)"] ~ i:first-of-type {
     background-color: #157347;
     color: white;
 }
 
-[alt="![](#.btn-danger)"] ~ a:first-of-type {
+[alt="![](#.btn-danger)"] ~ i:first-of-type {
     background-color: #bb2d3b;
     color: black;
 }
 
-[alt="![](#.btn-light)"] ~ a:first-of-type {
+[alt="![](#.btn-light)"] ~ i:first-of-type {
     background-color: #f9fafb;
     color: black;
 }
 
-[alt="![](#.btn-dark)"] ~ a:first-of-type {
+[alt="![](#.btn-dark)"] ~ i:first-of-type {
     background-color: #1c1f23;
     color: white;
 }
-
-
-
