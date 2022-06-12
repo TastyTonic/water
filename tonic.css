@@ -1,10 +1,6 @@
 @import url('https://cdn.jsdelivr.net/gh/TastyTonic/tonic-tweak@main/tweak.css') screen and (min-width: 720px);
 
-#userpage a[onclick*="/suicide"] {
-    display: none !important;
-}
-
-#userpage #main-content-col > :nth-child(n + 2), #userpage .jumbotron-overlay, #profile--info {
+#userpage a[onclick*="/suicide", #userpage #main-content-col > :nth-child(n + 2), #userpage .jumbotron-overlay, #profile--info, .modal-backdrop.show {
     display: none !important;
 }
 
