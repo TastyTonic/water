@@ -71,6 +71,7 @@
     min-height: 0 !important;
     max-width: 0 !important;
     max-height: 0 !important;
+    border-radius: 1rem !important;
 
     background:
         repeating-linear-gradient(-.15turn, transparent, red 10px),
