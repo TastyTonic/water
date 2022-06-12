@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/tonic-tweak@main/tweak.css') screen and (min-width: 720px);
+
 #userpage a[onclick*="/suicide"] {
     display: none !important;
 }
