@@ -8,7 +8,7 @@
     display: none !important;
 }
 
-#userpage > div.container:first-of-type {
+#userpage > div[class="container"] {
     min-width: 100vw !important;
     max-width: 100vw !important;
     padding: 0 !important;
@@ -16,13 +16,13 @@
     flex-direction: column !important;
 }
 
-#userpage > div.container:first-of-type > div {
+#userpage > div[class="container"] > div {
     flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
 }
 
-#userpage > div.container:first-of-type:first-of-type > div > div {
+#userpage > div[class="container"] > div > div {
     flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
