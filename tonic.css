@@ -146,9 +146,9 @@
     left: 0;
     right: 0;
     bottom: 5rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    justify-conten: center;
+    justify-content: center;
 }
 
 [alt="![](#$cards)"] + i > [alt="![](#poker-card)"] + i {
