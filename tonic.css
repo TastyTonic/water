@@ -140,3 +140,12 @@
     right: 2rem !important;
     margin: 0 0 0 auto !important;
 }
+
+[alt="![](#$cards)"] + i {
+    position: absolute;
+    bottom: 5rem;
+}
+
+[alt="![](#$cards)"] + i > [alt="![](#poker-card)"] + i {
+    margin: 0 2rem !important;
+}
