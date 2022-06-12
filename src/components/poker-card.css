@@ -1,19 +1,19 @@
-[alt="![](#.suit-club)"] ~ img[alt*=>"![](#"] + i:first-of-type {
+[alt="![](#.suit-club)"] + [alt="![](#poker-card)"] + i {
     --suit: '♣';
     --color: black;
 }
 
-[alt="![](#.suit-diamond)"] ~ img[alt*=>"![](#"] + i:first-of-type {
+[alt="![](#.suit-diamond)"] + [alt="![](#poker-card)"] + i {
     --suit: '♦';
     --color: red;
 }
 
-[alt="![](#.suit-heart)"] ~ img[alt*=>"![](#"] + i:first-of-type {
+[alt="![](#.suit-heart)"] + [alt="![](#poker-card)"] + i {
     --suit: '♥';
     --color: red;
 }
 
-[alt="![](#.suit-spade)"] ~ img[alt*=>"![](#"] + i:first-of-type {
+[alt="![](#.suit-spade)"] + [alt="![](#poker-card)"] + i {
     --suit: '♠';
     --color: black;
 }
@@ -63,7 +63,7 @@
     transform: scale(1, -1) !important;
 }
 
-[alt="![](#.hidden-card)"] ~ img[alt*=>"![](#"] + i:not(:hover) > img {
+[alt="![](#.hidden-card)"] + [alt*="![](#.suit-"] + [alt="![](#poker-card)"] + i:not(:hover) > img {
     margin: calc(var(--size) * -0.5rem) !important;
 
     padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem)) !important;
@@ -79,7 +79,7 @@
     !important;
 }
 
-[alt="![](#.hidden-card)"] ~ img[alt*=>"![](#"] + i:not(:hover)::before,
-[alt="![](#.hidden-card)"] ~ img[alt*=>"![](#"] + i:not(:hover)::after {
+[alt="![](#.hidden-card)"] + [alt*="![](#.suit-"] + [alt="![](#poker-card)"] + i:not(:hover)::before,
+[alt="![](#.hidden-card)"] + [alt*="![](#.suit-"] + [alt="![](#poker-card)"] + i:not(:hover)::after {
     display: none !important;
 }
