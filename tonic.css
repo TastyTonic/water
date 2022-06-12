@@ -8,131 +8,131 @@ a[onclick*="/suicide"] {
 
 body > div.container {
     padding: 0 !important;
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 body > div.container > div {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 body > div.container > div > div {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
     padding: 0 1rem !important;
 }
 
 #main-content-col {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 #main-content-col > :first-child {
-    flex-grow: 1;
+    flex-grow: 1 !important;
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 #main-content-col > :first-child > div {
-    flex-grow: 1;
+    flex-grow: 1 !important;
 }
 
 .jumbotron {
-    height: 100%;
-    padding: 1rem 3rem;
+    height: 100% !important;
+    padding: 1rem 3rem !important;
     background-image: url(//img.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg?w=1114) !important;
-    image-rendering: high-quality;
+    image-rendering: high-quality !important;
 }
 
 .jumbotron > div {
-    position: relative;
-    height: 100%;
+    position: relative !important;
+    height: 100% !important;
 }
 
 #profile--simphate + div {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
 }
 
 #profile--simphate {
-    position: absolute;
-    top: 2.5rem;
-    right: 0;
+    position: absolute !important;
+    top: 2.5rem !important;
+    right: 0 !important;
 }
 
 #profile--actionbtns {
-    position: absolute;
-    top: 5rem;
-    right: 0;
+    position: absolute !important;
+    top: 5rem !important;
+    right: 0 !important;
 }
 
 #button-unsub, #button-sub, a[onclick*="input-message"], a[onclick*="coin-transfer-amount"] {
     font-size: 0 !important;
-    font-family: 'Font Awesome 6 Pro';
-    width: 4.2rem;
+    font-family: 'Font Awesome 6 Pro' !important;
+    width: 4.2rem !important;
 }
 
 #button-unsub {
     background-color: var(--primary) !important;
-    color: white;
-    border: 1px solid var(--primary);
+    color: white !important;
+    border: 1px solid var(--primary) !important;
 }
 
 #button-unsub::after {
     font-size: 2rem !important;
-    content: '';
+    content: '' !important;
 }
 
 #button-unsub:hover::after {
     font-size: 2rem !important;
-    content: '';
+    content: '' !important;
 }
 
 #button-sub {
     background-color: #333333 !important;
-    color: #aaaaaa;
-    border: 1px solid gray;
+    color: #aaaaaa !important;
+    border: 1px solid gray !important;
 }
 
 #button-sub::after {
     font-size: 2rem !important;
-    content: '';
+    content: '' !important;
 }
 
 #button-sub:hover::after {
     font-size: 2rem !important;
-    content: '';
+    content: '' !important;
 }
 
 a[onclick*="input-message"]::after {
     font-size: 2rem !important;
-    content: '';
+    content: '' !important;
 }
 
 a[onclick*="coin-transfer-amount"]::after {
     font-size: 2rem !important;
-    content: '';
+    content: '' !important;
 }
 
 #message, #coin-transfer {
-    position: absolute;
-    top: 10.3rem;
-    right: 0;
+    position: absolute !important;
+    top: 10.3rem !important;
+    right: 0 !important;
     
-    background: var(--background);
-    padding: 1.5rem;
-    border-radius: 0.33rem;
+    background: var(--background) !important;
+    padding: 1.5rem !important;
+    border-radius: 0.33rem !important;
     
     margin: 0 !important;
 }
 
 .toast {
-    position: absolute;
+    position: absolute !important;
     right: 2rem !important;
     margin: 0 0 0 auto !important;
 }
