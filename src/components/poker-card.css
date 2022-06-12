@@ -62,7 +62,7 @@
 }
 
 [alt="![](#.hidden-card)"] ~ i:first-of-type:not(:hover) > img {
-    margin: calc(var(--size) * -0.5rem);
+    margin: calc(var(--size) * -0.5rem) !important;
 
     padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem));
     width: 0;
