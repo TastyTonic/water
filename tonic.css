@@ -143,9 +143,14 @@
 
 [alt="![](#$cards)"] + i {
     position: absolute;
+    left: 0;
+    right: 0;
     bottom: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-conten: center;
 }
 
 [alt="![](#$cards)"] + i > [alt="![](#poker-card)"] + i {
-    margin: 0 2rem !important;
+    margin: 0 1.5rem !important;
 }
