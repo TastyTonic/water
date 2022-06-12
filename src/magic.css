@@ -10,5 +10,5 @@ img[alt*="![](#"] {
 
 /* magic */
 
-@import url('https://cdn.jsdelivr.net/gh/TastyTonic/water@main/src/simple.css');
-@import url('https://cdn.jsdelivr.net/gh/TastyTonic/water@main/src/components.css');
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/water/src/simple.css');
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/water/src/components.css');
