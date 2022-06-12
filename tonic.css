@@ -1,4 +1,4 @@
-a[onclick*="/suicide"] {
+#userpage a[onclick*="/suicide"] {
     display: none !important;
 }
 
@@ -6,7 +6,7 @@ a[onclick*="/suicide"] {
     display: none !important;
 }
 
-body > div.container {
+#userpage body > div.container {
     min-width: 100vw !important;
     max-width: 100vw !important;
     padding: 0 !important;
@@ -14,114 +14,114 @@ body > div.container {
     flex-direction: column !important;
 }
 
-body > div.container > div {
+#userpage body > div.container > div {
     flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
 }
 
-body > div.container > div > div {
+#userpage body > div.container > div > div {
     flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
     padding: 0 1rem !important;
 }
 
-#main-content-col {
+#userpage #main-content-col {
     flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
 }
 
-#main-content-col > :first-child {
+#userpage #main-content-col > :first-child {
     flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
 }
 
-#main-content-col > :first-child > div {
+#userpage #main-content-col > :first-child > div {
     flex-grow: 1 !important;
 }
 
-.jumbotron {
+#userpage .jumbotron {
     height: 100% !important;
     padding: 1rem 3rem !important;
     background-image: url(//img.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg?w=1114) !important;
     image-rendering: high-quality !important;
 }
 
-.jumbotron > div {
+#userpage .jumbotron > div {
     position: relative !important;
     height: 100% !important;
 }
 
-#profile--simphate + div {
+#userpage #profile--simphate + div {
     position: absolute !important;
     top: 0 !important;
     right: 0 !important;
 }
 
-#profile--simphate {
+#userpage #profile--simphate {
     position: absolute !important;
     top: 2.5rem !important;
     right: 0 !important;
 }
 
-#profile--actionbtns {
+#userpage #profile--actionbtns {
     position: absolute !important;
     top: 5rem !important;
     right: 0 !important;
 }
 
-#button-unsub, #button-sub, a[onclick*="input-message"], a[onclick*="coin-transfer-amount"] {
+#userpage #button-unsub, #userpage #button-sub, #userpage a[onclick*="input-message"], #userpage a[onclick*="coin-transfer-amount"] {
     font-size: 0 !important;
     font-family: 'Font Awesome 6 Pro' !important;
     width: 4.2rem !important;
 }
 
-#button-unsub {
+#userpage #button-unsub {
     background-color: var(--primary) !important;
     color: white !important;
     border: 1px solid var(--primary) !important;
 }
 
-#button-unsub::after {
+#userpage #button-unsub::after {
     font-size: 2rem !important;
     content: '' !important;
 }
 
-#button-unsub:hover::after {
+#userpage #button-unsub:hover::after {
     font-size: 2rem !important;
     content: '' !important;
 }
 
-#button-sub {
+#userpage #button-sub {
     background-color: #333333 !important;
     color: #aaaaaa !important;
     border: 1px solid gray !important;
 }
 
-#button-sub::after {
+#userpage #button-sub::after {
     font-size: 2rem !important;
     content: '' !important;
 }
 
-#button-sub:hover::after {
+#userpage #button-sub:hover::after {
     font-size: 2rem !important;
     content: '' !important;
 }
 
-a[onclick*="input-message"]::after {
+#userpage a[onclick*="input-message"]::after {
     font-size: 2rem !important;
     content: '' !important;
 }
 
-a[onclick*="coin-transfer-amount"]::after {
+#userpage a[onclick*="coin-transfer-amount"]::after {
     font-size: 2rem !important;
     content: '' !important;
 }
 
-#message, #coin-transfer {
+#userpage #message, #userpage #coin-transfer {
     position: absolute !important;
     top: 10.3rem !important;
     right: 0 !important;
@@ -133,7 +133,7 @@ a[onclick*="coin-transfer-amount"]::after {
     margin: 0 !important;
 }
 
-.toast {
+#userpage .toast {
     position: absolute !important;
     right: 2rem !important;
     margin: 0 0 0 auto !important;
