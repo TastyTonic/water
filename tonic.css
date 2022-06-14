@@ -183,6 +183,7 @@ img[alt="![](???)"] {
 
 [alt*="$animated-card-1"] + img + img + img + i {
     animation-name: animated-card-1;
+    --rotate: -33deg;
 }
 
 @keyframes animated-card-2 {
@@ -194,6 +195,7 @@ img[alt="![](???)"] {
 
 [alt*="$animated-card-2"] + img + img + img + i {
     animation-name: animated-card-2;
+    --rotate: -10deg;
 }
 
 @keyframes animated-card-3 {
@@ -206,6 +208,7 @@ img[alt="![](???)"] {
 
 [alt*="$animated-card-3"] + img + img + img + i {
     animation-name: animated-card-3;
+    --rotate: 10deg;
 }
 
 @keyframes animated-card-4 {
@@ -218,6 +221,7 @@ img[alt="![](???)"] {
 
 [alt*="$animated-card-4"] + img + img + img + i {
     animation-name: animated-card-4;
+    --rotate: 33deg;
 }
 
 [alt*="$animated-card"] + img + img + img + i:hover {
