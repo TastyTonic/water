@@ -150,3 +150,122 @@
 [alt="![](#$cards)"] + i > [alt="![](#poker-card)"] + i {
     margin: 0 1.5rem !important;
 }
+
+img[alt="![](???)"] {
+    width: 0;
+    height: 0;
+    padding: 82.5px 62.5px;
+    background-image: url(https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#main-content-row #main-content-col [alt*="$cards"] + i {
+    position: static;
+}
+
+[alt*="$animated-card"] + img + img + img + i {
+    position: absolute !important;
+    transform: translate(-50%, -100%) rotate(var(--rotate));
+    top: 90%;
+    left: 30%;
+    --rotate: -40deg;
+    animation-duration: 0.33s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animated-card-1 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
+  100% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
+}
+
+[alt*="$animated-card-1"] + img + img + img + i {
+    animation-name: animated-card-1;
+}
+
+@keyframes animated-card-2 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
+  100% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
+}
+
+[alt*="$animated-card-2"] + img + img + img + i {
+    animation-name: animated-card-2;
+}
+
+@keyframes animated-card-3 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg;}
+  100% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg;}
+}
+
+[alt*="$animated-card-3"] + img + img + img + i {
+    animation-name: animated-card-3;
+}
+
+@keyframes animated-card-4 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg;}
+  100% {top: 90%; left: calc(50% + 180px); --rotate: 33deg;}
+}
+
+[alt*="$animated-card-4"] + img + img + img + i {
+    animation-name: animated-card-4;
+}
+
+[alt*="$animated-card"] + img + img + img + i:hover {
+    z-index: 2;
+}
+
+[alt*=".card-context"] + i {
+    transition-duration: 0.2s;
+    transition-delay: 2s;
+    display: flex !important;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 50%;
+    opacity: 0;
+    background: var(--background);
+    z-index: -2;
+}
+
+[alt*="$animated-card"] + img + img + img + i:hover + [alt*=".card-context"] + i, [alt*=".card-context"] + i:hover {
+    transition-delay: 0.1s;
+    z-index: 2;
+    opacity: 100% !important;
+}
+
+[alt*="$animated-card"] + img + img + img + i:hover + [alt*=".card-context"] + i ~ [alt*=".card-context"] + i {
+    transition-delay: 0.1s;
+}
+
+[alt*=".card-context"] + i > img {
+    position: absolute;
+    top: 50%;
+    max-width: 125px;
+    transform: translateY(-50%);
+    margin: 0 2rem !important;
+}
+
+[alt*=".card-context"] + i > i {
+    flex-grow: 1;
+    margin-left: calc(125px + 2rem);
+    padding: 2rem;
+}
+
+
+[alt*=".card-context"] + i > i > i {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
