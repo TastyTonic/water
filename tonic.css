@@ -176,9 +176,9 @@ img[alt="![](???)"] {
 }
 
 @keyframes animated-card-1 {
-  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
-  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
-  100% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  100% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
 }
 
 [alt*="$animated-card-1"] + img + img + img + i {
@@ -186,10 +186,10 @@ img[alt="![](???)"] {
 }
 
 @keyframes animated-card-2 {
-  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
-  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
-  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
-  100% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  100% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
 }
 
 [alt*="$animated-card-2"] + img + img + img + i {
@@ -197,11 +197,11 @@ img[alt="![](???)"] {
 }
 
 @keyframes animated-card-3 {
-  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
-  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
-  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
-  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg;}
-  100% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg;}
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+  100% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
 }
 
 [alt*="$animated-card-3"] + img + img + img + i {
@@ -209,11 +209,11 @@ img[alt="![](???)"] {
 }
 
 @keyframes animated-card-4 {
-  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg;}
-  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg;}
-  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg;}
-  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg;}
-  100% {top: 90%; left: calc(50% + 180px); --rotate: 33deg;}
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+  100% {top: 90%; left: calc(50% + 180px); --rotate: 33deg !important;}
 }
 
 [alt*="$animated-card-4"] + img + img + img + i {
