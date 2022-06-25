@@ -151,7 +151,7 @@
     margin: 0 1.5rem !important;
 }
 
-img[alt="![](???)"], img[alt="![](#???)"] {
+img[alt="![](:???)"] {
     width: 0;
     height: 0;
     padding: 82.5px 62.5px;
