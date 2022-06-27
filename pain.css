@@ -1,0 +1,746 @@
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/tonic-tweak@main/tweak.css') screen and (min-width: 720px);
+
+#userpage a[onclick*="/suicide"], #userpage #main-content-col > :nth-child(n + 2), #userpage .jumbotron-overlay, #profile--info, .modal-backdrop.show {
+    display: none !important;
+}
+
+#userpage > div[class="container"] {
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage > div[class="container"] > div {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage > div[class="container"] > div > div {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 1rem !important;
+}
+
+#userpage #main-content-col {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage #main-content-col > :first-child {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage #main-content-col > :first-child > div {
+    flex-grow: 1 !important;
+}
+
+#userpage .jumbotron {
+    height: 100% !important;
+    padding: 1rem 3rem !important;
+    background-image: url(//img.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg?w=1114) !important;
+    image-rendering: high-quality !important;
+}
+
+#userpage .jumbotron > div {
+    position: relative !important;
+    height: 100% !important;
+}
+
+#userpage #profile--simphate + div {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+#userpage #profile--simphate {
+    position: absolute !important;
+    top: 2.5rem !important;
+    right: 0 !important;
+}
+
+#userpage #profile--actionbtns {
+    position: absolute !important;
+    top: 5rem !important;
+    right: 0 !important;
+}
+
+#userpage #button-unsub, #userpage #button-sub, #userpage a[onclick*="input-message"], #userpage a[onclick*="coin-transfer-amount"] {
+    font-size: 0 !important;
+    font-family: 'Font Awesome 6 Pro' !important;
+    width: 4.2rem !important;
+}
+
+#userpage #button-unsub {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border: 1px solid var(--primary) !important;
+}
+
+#userpage #button-unsub::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #button-unsub:hover::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #button-sub {
+    background-color: #333333 !important;
+    color: #aaaaaa !important;
+    border: 1px solid gray !important;
+}
+
+#userpage #button-sub::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #button-sub:hover::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage a[onclick*="input-message"]::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage a[onclick*="coin-transfer-amount"]::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #message, #userpage #coin-transfer {
+    position: absolute !important;
+    top: 10.3rem !important;
+    right: 0 !important;
+    
+    background: var(--background) !important;
+    padding: 1.5rem !important;
+    border-radius: 0.33rem !important;
+    
+    margin: 0 !important;
+}
+
+#userpage .toast {
+    position: absolute !important;
+    right: 2rem !important;
+    margin: 0 0 0 auto !important;
+}
+
+[href="![](#$cards)"] + i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+[href="![](#$cards)"] + i > [href="![](#poker-card)"] + i {
+    margin: 0 1.5rem !important;
+}
+
+img[alt="![](:???)"] {
+    width: 0;
+    height: 0;
+    padding: 82.5px 62.5px;
+    background-image: url(https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#main-content-row #main-content-col [href*="$cards"] + i {
+    position: static;
+}
+
+[href*="$animated-card"] + a + a + a + i {
+    position: absolute !important;
+    transform: translate(-50%, -100%) rotate(var(--rotate));
+    top: 90%;
+    left: 30%;
+    --rotate: -40deg;
+    animation-duration: 0.33s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animated-card-1 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  100% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+}
+
+[href*="$animated-card-1"] + a + a + a + i {
+    animation-name: animated-card-1;
+    --rotate: -33deg;
+}
+
+@keyframes animated-card-2 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  100% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+}
+
+[href*="$animated-card-2"] + a + a + a + i {
+    animation-name: animated-card-2;
+    --rotate: -10deg;
+}
+
+@keyframes animated-card-3 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+  100% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+}
+
+[href*="$animated-card-3"] + a + a + a + i {
+    animation-name: animated-card-3;
+    --rotate: 10deg;
+}
+
+@keyframes animated-card-4 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+  100% {top: 90%; left: calc(50% + 180px); --rotate: 33deg !important;}
+}
+
+[href*="$animated-card-4"] + a + a + a + i {
+    animation-name: animated-card-4;
+    --rotate: 33deg;
+}
+
+[href*="$animated-card"] + a + a + a + i:hover {
+    z-index: 2;
+}
+
+[href*=".card-context"] + i {
+    transition-duration: 0.2s;
+    transition-delay: 2s;
+    display: flex !important;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 50%;
+    opacity: 0;
+    background: var(--background);
+    z-index: -2;
+}
+
+[href*="$animated-card"] + a + a + a + i:hover + [href*=".card-context"] + i, [href*=".card-context"] + i:hover {
+    transition-delay: 0.1s;
+    z-index: 2;
+    opacity: 100% !important;
+}
+
+[href*="$animated-card"] + a + a + a + i:hover + [href*=".card-context"] + i ~ [href*=".card-context"] + i {
+    transition-delay: 0.1s;
+    display: none !important;
+}
+
+[href*=".card-context"] + i > a {
+    position: absolute;
+    top: 50%;
+    max-width: 125px;
+    transform: translateY(-50%);
+    margin: 0 2rem !important;
+}
+
+[href*=".card-context"] + i > i {
+    flex-grow: 1;
+    margin-left: calc(125px + 2rem);
+    padding: 2rem;
+}
+
+
+[href*=".card-context"] + i > i > i {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* magic */
+
+i {
+    font-style: normal;   
+}
+
+img[alt*="![](#"] {
+    display: none;
+}
+
+/* cards */
+
+[href="![](#.suit-club)"] + [href="![](#poker-card)"] + * {
+    --suit: '♣';
+    --color: black;
+}
+
+[href="![](#.suit-diamond)"] + [href="![](#poker-card)"] + * {
+    --suit: '♦';
+    --color: red;
+}
+
+[href="![](#.suit-heart)"] + [href="![](#poker-card)"] + * {
+    --suit: '♥';
+    --color: red;
+}
+
+[href="![](#.suit-spade)"] + [href="![](#poker-card)"] + * {
+    --suit: '♠';
+    --color: black;
+}
+@import url('https://cdn.jsdelivr.net/gh/TastyTonic/tonic-tweak@main/tweak.css') screen and (min-width: 720px);
+
+#userpage a[onclick*="/suicide"], #userpage #main-content-col > :nth-child(n + 2), #userpage .jumbotron-overlay, #profile--info, .modal-backdrop.show {
+    display: none !important;
+}
+
+#userpage > div[class="container"] {
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage > div[class="container"] > div {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage > div[class="container"] > div > div {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 1rem !important;
+}
+
+#userpage #main-content-col {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage #main-content-col > :first-child {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#userpage #main-content-col > :first-child > div {
+    flex-grow: 1 !important;
+}
+
+#userpage .jumbotron {
+    height: 100% !important;
+    padding: 1rem 3rem !important;
+    background-image: url(//img.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg?w=1114) !important;
+    image-rendering: high-quality !important;
+}
+
+#userpage .jumbotron > div {
+    position: relative !important;
+    height: 100% !important;
+}
+
+#userpage #profile--simphate + div {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+#userpage #profile--simphate {
+    position: absolute !important;
+    top: 2.5rem !important;
+    right: 0 !important;
+}
+
+#userpage #profile--actionbtns {
+    position: absolute !important;
+    top: 5rem !important;
+    right: 0 !important;
+}
+
+#userpage #button-unsub, #userpage #button-sub, #userpage a[onclick*="input-message"], #userpage a[onclick*="coin-transfer-amount"] {
+    font-size: 0 !important;
+    font-family: 'Font Awesome 6 Pro' !important;
+    width: 4.2rem !important;
+}
+
+#userpage #button-unsub {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border: 1px solid var(--primary) !important;
+}
+
+#userpage #button-unsub::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #button-unsub:hover::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #button-sub {
+    background-color: #333333 !important;
+    color: #aaaaaa !important;
+    border: 1px solid gray !important;
+}
+
+#userpage #button-sub::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #button-sub:hover::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage a[onclick*="input-message"]::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage a[onclick*="coin-transfer-amount"]::after {
+    font-size: 2rem !important;
+    content: '' !important;
+}
+
+#userpage #message, #userpage #coin-transfer {
+    position: absolute !important;
+    top: 10.3rem !important;
+    right: 0 !important;
+    
+    background: var(--background) !important;
+    padding: 1.5rem !important;
+    border-radius: 0.33rem !important;
+    
+    margin: 0 !important;
+}
+
+#userpage .toast {
+    position: absolute !important;
+    right: 2rem !important;
+    margin: 0 0 0 auto !important;
+}
+
+[href="#$cards"] + i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+[href="#$cards"] + i > [href="#poker-card"] + i {
+    margin: 0 1.5rem !important;
+}
+
+img[alt="![](:???)"] {
+    width: 0;
+    height: 0;
+    padding: 82.5px 62.5px;
+    background-image: url(https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#main-content-row #main-content-col [href*="$cards"] + i {
+    position: static;
+}
+
+[href*="$animated-card"] + a + a + a + i {
+    position: absolute !important;
+    transform: translate(-50%, -100%) rotate(var(--rotate));
+    top: 90%;
+    left: 30%;
+    --rotate: -40deg;
+    animation-duration: 0.33s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animated-card-1 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  100% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+}
+
+[href*="$animated-card-1"] + a + a + a + i {
+    animation-name: animated-card-1;
+    --rotate: -33deg;
+}
+
+@keyframes animated-card-2 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  100% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+}
+
+[href*="$animated-card-2"] + a + a + a + i {
+    animation-name: animated-card-2;
+    --rotate: -10deg;
+}
+
+@keyframes animated-card-3 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+  100% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+}
+
+[href*="$animated-card-3"] + a + a + a + i {
+    animation-name: animated-card-3;
+    --rotate: 10deg;
+}
+
+@keyframes animated-card-4 {
+  0% {top: 90%; left: calc(50% - 180px); --rotate: -40deg !important;}
+  25% {top: 90%; left: calc(50% - 180px); --rotate: -33deg !important;}
+  50% {top: calc(90% - 50px); left: calc(50% - 65px); --rotate: -10deg !important;}
+  75% {top: calc(90% - 50px); left: calc(50% + 65px); --rotate: 10deg !important;}
+  100% {top: 90%; left: calc(50% + 180px); --rotate: 33deg !important;}
+}
+
+[href*="$animated-card-4"] + a + a + a + i {
+    animation-name: animated-card-4;
+    --rotate: 33deg;
+}
+
+[href*="$animated-card"] + a + a + a + i:hover {
+    z-index: 2;
+}
+
+[href*=".card-context"] + i {
+    transition-duration: 0.2s;
+    transition-delay: 2s;
+    display: flex !important;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 50%;
+    opacity: 0;
+    background: var(--background);
+    z-index: -2;
+}
+
+[href*="$animated-card"] + a + a + a + i:hover + [href*=".card-context"] + i, [href*=".card-context"] + i:hover {
+    transition-delay: 0.1s;
+    z-index: 2;
+    opacity: 100% !important;
+}
+
+[href*="$animated-card"] + a + a + a + i:hover + [href*=".card-context"] + i ~ [href*=".card-context"] + i {
+    transition-delay: 0.1s;
+    display: none !important;
+}
+
+[href*=".card-context"] + i > a {
+    position: absolute;
+    top: 50%;
+    max-width: 125px;
+    transform: translateY(-50%);
+    margin: 0 2rem !important;
+}
+
+[href*=".card-context"] + i > i {
+    flex-grow: 1;
+    margin-left: calc(125px + 2rem);
+    padding: 2rem;
+}
+
+
+[href*=".card-context"] + i > i > i {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* magic */
+
+i {
+    font-style: normal;   
+}
+
+img[alt*="![](#"] {
+    display: none;
+}
+
+/* cards */
+
+[href="#.suit-club"] + [href="#poker-card"] + * {
+    --suit: '♣';
+    --color: black;
+}
+
+[href="#.suit-diamond"] + [href="#poker-card"] + * {
+    --suit: '♦';
+    --color: red;
+}
+
+[href="#.suit-heart"] + [href="#poker-card"] + * {
+    --suit: '♥';
+    --color: red;
+}
+
+[href="#.suit-spade"] + [href="#poker-card"] + * {
+    --suit: '♠';
+    --color: black;
+}
+
+[href="#poker-card"] + * {
+    --size: 1;
+
+    position: relative !important;
+    display: inline-block !important;
+    padding: calc(var(--size) * 1rem) !important;
+    border-radius: 1rem !important;
+
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
+[href="#poker-card"] + * > a > img {
+    min-width: calc(var(--size) * 125px) !important;
+    min-height: calc(var(--size) * 175px) !important;
+    max-width: calc(var(--size) * 125px) !important;
+    max-height: calc(var(--size) * 175px) !important;
+    margin: 0 !important;
+}
+
+[href="#poker-card"] + *::before,
+[href="#poker-card"] + *::after {
+    padding: calc(var(--size) * 0.1rem) calc(var(--size) * 0.8rem) !important;
+    font-size: calc(var(--size) * 2rem) !important;
+    content: var(--suit) !important;
+    color: var(--color) !important;
+
+    display: inline !important;
+    position: absolute !important;
+    background-color: white !important;
+    border-radius: 25% !important;
+    vertical-align: middle !important;
+}
+
+[href="#poker-card"] + *::before {
+    left: 0 !important;
+    top: 0 !important;
+}
+
+[href="#poker-card"] + *::after {
+    right: 0 !important;
+    bottom: 0 !important;
+    transform: scale(1, -1) !important;
+}
+
+[href="#.hidden-card"] + [href*="#.suit-"] + [href="#poker-card"] + :not(:hover) > a > img {
+    margin: calc(var(--size) * -0.5rem) !important;
+    padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem)) !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    border-radius: 1rem !important;
+
+    background:
+        repeating-linear-gradient(-.15turn, transparent, red 10px),
+        repeating-linear-gradient(.15turn, pink, transparent 10px)
+    !important;
+}
+
+[href="#.hidden-card"] + [href*="#.suit-"] + [href="#poker-card"] + :not(:hover)::before,
+[href="#.hidden-card"] + [href*="#.suit-"] + [href="#poker-card"] + :not(:hover)::after {
+    display: none !important;
+}
+
+[href="![](#poker-card)"] + * {
+    --size: 1;
+
+    position: relative !important;
+    display: inline-block !important;
+    padding: calc(var(--size) * 1rem) !important;
+    border-radius: 1rem !important;
+
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
+[href="#poker-card"] + * > a > img {
+    min-width: calc(var(--size) * 125px) !important;
+    min-height: calc(var(--size) * 175px) !important;
+    max-width: calc(var(--size) * 125px) !important;
+    max-height: calc(var(--size) * 175px) !important;
+    margin: 0 !important;
+}
+
+[href="![](#poker-card)"] + *::before,
+[href="![](#poker-card)"] + *::after {
+    padding: calc(var(--size) * 0.1rem) calc(var(--size) * 0.8rem) !important;
+    font-size: calc(var(--size) * 2rem) !important;
+    content: var(--suit) !important;
+    color: var(--color) !important;
+
+    display: inline !important;
+    position: absolute !important;
+    background-color: white !important;
+    border-radius: 25% !important;
+    vertical-align: middle !important;
+}
+
+[href="![](#poker-card)"] + *::before {
+    left: 0 !important;
+    top: 0 !important;
+}
+
+[href="![](#poker-card)"] + *::after {
+    right: 0 !important;
+    bottom: 0 !important;
+    transform: scale(1, -1) !important;
+}
+
+[href="![](#.hidden-card)"] + [href*="![](#.suit-"] + [href="![](#poker-card)"] + :not(:hover) > a > img {
+    margin: calc(var(--size) * -0.5rem) !important;
+    padding: calc(var(--size) * (87.5px + .5rem)) calc(var(--size) * (62.5px + .5rem)) !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    border-radius: 1rem !important;
+
+    background:
+        repeating-linear-gradient(-.15turn, transparent, red 10px),
+        repeating-linear-gradient(.15turn, pink, transparent 10px)
+    !important;
+}
+
+[href="![](#.hidden-card)"] + [href*="![](#.suit-"] + [href="![](#poker-card)"] + :not(:hover)::before,
+[href="![](#.hidden-card)"] + [href*="![](#.suit-"] + [href="![](#poker-card)"] + :not(:hover)::after {
+    display: none !important;
+}
